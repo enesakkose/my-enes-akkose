@@ -1,7 +1,21 @@
+import Hero from '@/components/hero'
+import Skills from '@/components/skills'
+import Experience from '@/components/experience'
+import Education from '@/components/education'
+import Projects from '@/components/projects'
+import Footer from '@/components/footer'
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <h1 className="text-3xl font-bold">enes akköse ve enes akköse ve enes akköse</h1>
-    </div>
-  );
+    <>
+      <main>
+        <Hero />
+        <Skills />
+        <Experience />
+        <Education />
+        <Projects />
+      </main>
+      <Footer />
+    </>
+  )
 }
