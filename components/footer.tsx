@@ -108,7 +108,7 @@ export default function Footer() {
         {/* Social links */}
         <div className='animate-fade-in-up delay-2 mb-12 flex items-center justify-center gap-4'>
           <a
-            href='https://linkedin.com/in/enesakkose'
+            href='https://www.linkedin.com/in/enes-akk%C3%B6se-93a6ba1bb/'
             target='_blank'
             rel='noopener noreferrer'
             className='flex h-11 w-11 items-center justify-center rounded-full border border-border bg-surface text-muted transition-all duration-300 hover:border-accent hover:text-accent hover:shadow-[0_0_20px_rgba(212,168,83,0.15)]'
