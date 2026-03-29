@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'Angular Expert',
     'React Developer',
     'Java Developer',
-    'Next.js Portfolio',
+    'Next.js Development',
     'React Native Mobile App',
     'TypeScript Developer',
     'Istanbul Software Engineer',
@@ -38,11 +38,11 @@ export const metadata: Metadata = {
     'Scalable Architecture',
   ],
   openGraph: {
-    title: 'Enes Akköse | Software Developer | Portfolio',
+    title: 'Enes Akköse | Software Developer',
     description:
       'Explore the portfolio of Enes Akköse, a Full Stack Developer specialized in modern web and mobile ecosystems development.',
     url: 'https://enesakkose.com',
-    siteName: 'Enes Akköse Portfolio',
+    siteName: 'Enes Akköse',
     images: [
       {
         url: '/og-image.png',
