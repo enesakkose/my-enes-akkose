@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Enes Akköse | Software Developer | Portfolio',
     description:
-      'Explore the portfolio of Enes Akköse, a Full Stack Developer specialized in modern web and mobile ecosystems and Java backend development.',
+      'Explore the portfolio of Enes Akköse, a Full Stack Developer specialized in modern web and mobile ecosystems development.',
     url: 'https://enesakkose.com',
     siteName: 'Enes Akköse Portfolio',
     images: [

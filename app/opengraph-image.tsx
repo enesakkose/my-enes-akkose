@@ -19,10 +19,9 @@ export default function Image() {
       // ImageResponse JSX element
       <div
         style={{
-          fontSize: 128,
-          background: '#d4a853',
           width: '100%',
           height: '100%',
+          background: 'linear-gradient(135deg, #d4a853 0%, #b8922e 50%, #d4a853 100%)',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -30,11 +29,23 @@ export default function Image() {
           color: '#08080a',
           fontWeight: 900,
           textAlign: 'center',
+          padding: 80,
         }}
       >
-        <div style={{ marginBottom: 20, letterSpacing: '-0.02em' }}>E.A</div>
-        <div style={{ fontSize: 48, fontWeight: 500, opacity: 0.8 }}>
-          Enes Akköse | Software Developer
+        <div style={{ fontSize: 100, fontWeight: 900, marginBottom: 10, letterSpacing: '-0.02em' }}>
+          Enes Akköse
+        </div>
+        <div
+          style={{
+            fontSize: 32,
+            fontWeight: 500,
+            opacity: 0.9,
+            letterSpacing: '0.5em',
+            textTransform: 'uppercase',
+            marginTop: 20,
+          }}
+        >
+          Software Developer
         </div>
       </div>
     ),
