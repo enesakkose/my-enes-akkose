@@ -4,6 +4,7 @@ const SKILL_CATEGORIES = [
     skills: [
       'Angular',
       'React JS',
+      'React Native',
       'Next.js',
       'Javascript',
       'Typescript',
@@ -16,11 +17,19 @@ const SKILL_CATEGORIES = [
       'Zustand',
       'Ngxs',
       'RxJs',
+      'TanStack Query',
+      'Framer Motion',
+      'Mantine UI',
+      'Vite',
+      'Expo',
+      'Signals',
+      'Vitest',
     ],
   },
   {
     title: 'Backend & Others',
     skills: [
+      'Java',
       'Firebase',
       'Node.js',
       'Express.js',

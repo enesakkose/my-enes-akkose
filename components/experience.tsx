@@ -2,6 +2,7 @@ interface Project {
   name: string
   description: string
   tech: string[]
+  link?: string
 }
 
 interface SubSection {
@@ -9,7 +10,15 @@ interface SubSection {
   projects: Project[]
 }
 
-const EXPERIENCE_DATA = {
+interface ExperienceData {
+  company: string
+  role: string
+  period: string
+  location: string
+  sections: SubSection[]
+}
+
+const EXPERIENCE_DATA: ExperienceData = {
   company: 'Rast Mobile',
   role: 'Software Developer',
   period: 'Aug 2023 — Present',
@@ -23,18 +32,34 @@ const EXPERIENCE_DATA = {
           description:
             'Developed a hybrid application that allows users to rent and purchase equipment, access campaigns, create service requests, and track AI-powered updates. Implemented Angular modules including equipment notes calendar, leasing calculator, and order tracking.',
           tech: ['Angular', 'NGXS', 'Flutter', 'Java'],
+          link: 'https://apps.apple.com/tr/app/boom360/id1546629853',
         },
         {
           name: 'MINI',
           description:
             'Developed a web application enabling users to purchase vehicles, schedule test drives and appointments, and customize Prime packages. Implemented custom sliders with Swiper and SVG, improved payment features.',
           tech: ['Next.js', 'HookState', 'Framer Motion', 'Tailwind CSS'],
+          link: 'https://onlinestore.mini.com.tr/',
         },
       ],
     },
     {
-      client: 'ETIYA (External)',
+      client: 'ETIYA',
       projects: [
+        {
+          name: 'FREEDOM',
+          description:
+            'Contributing to telecom customer operations platform, developing SIM card management and activation workflows, improving transaction reliability and user process efficiency.',
+          tech: [
+            'React',
+            'Zustand',
+            'TanStack',
+            'Tailwind CSS',
+            'Mantine UI',
+            'Vitest',
+            'Java',
+          ],
+        },
         {
           name: 'WSC & GD-Toolbox',
           description:
@@ -63,16 +88,18 @@ const EXPERIENCE_DATA = {
           description:
             'Developed research and development infrastructure applications. Improved data grid features and export functionality, designed new UI focused on high user experience.',
           tech: ['Angular', 'NGXS', 'Nest.js', 'DevExtreme'],
+          link: 'https://argesis.tubitak.gov.tr/',
         },
         {
           name: 'KİT-Sİ',
           description:
             'Developed the login system for certain books on the publications site. Implemented new UI and added features that allow users to upload book content.',
           tech: ['Angular', 'NgRx', 'Java'],
+          link: 'https://kitsi.tubitak.gov.tr/',
         },
       ],
     },
-  ] satisfies SubSection[],
+  ],
 }
 
 export default function Experience() {
@@ -129,7 +156,7 @@ export default function Experience() {
               {/* Project cards */}
               <div className='grid gap-4 sm:grid-cols-2'>
                 {section.projects.map((project) => (
-                  <div key={project.name} className='card group'>
+                  <div key={project.name} className='card group flex flex-col'>
                     <h5
                       className='mb-2 text-base font-bold text-foreground transition-colors group-hover:text-accent'
                       style={{ fontFamily: 'var(--font-syne)' }}
@@ -137,7 +164,38 @@ export default function Experience() {
                       {project.name}
                     </h5>
                     <p className='mb-4 text-sm leading-relaxed text-muted'>{project.description}</p>
-                    <div className='flex flex-wrap gap-1.5'>
+
+                    {project.link && (
+                      <div className='mb-5'>
+                        <a
+                          href={project.link}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          className='group/btn inline-flex items-center gap-2 rounded-full border-0 px-4 py-2 text-[11px] font-semibold text-background outline-none cursor-pointer transition-all duration-300 hover:brightness-110 hover:shadow-[0_0_16px_rgba(212,168,83,0.3)]'
+                          style={{
+                            background:
+                              'linear-gradient(135deg, #d4a853 0%, #b8922e 50%, #d4a853 100%)',
+                          }}
+                        >
+                          View Project
+                          <svg
+                            className='h-3 w-3 transition-transform duration-300 group-hover/btn:translate-x-1'
+                            fill='none'
+                            stroke='currentColor'
+                            viewBox='0 0 24 24'
+                          >
+                            <path
+                              strokeLinecap='round'
+                              strokeLinejoin='round'
+                              strokeWidth={2}
+                              d='M17 8l4 4m0 0l-4 4m4-4H3'
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                    )}
+
+                    <div className='mt-auto flex flex-wrap gap-1.5'>
                       {project.tech.map((t) => (
                         <span
                           key={t}

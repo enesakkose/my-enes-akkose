@@ -1,8 +1,8 @@
 import Hero from '@/components/hero'
 import Skills from '@/components/skills'
 import Experience from '@/components/experience'
+import MyWorks from '@/components/my-works'
 import Education from '@/components/education'
-import Projects from '@/components/projects'
 import Footer from '@/components/footer'
 
 export default function Home() {
@@ -12,8 +12,8 @@ export default function Home() {
         <Hero />
         <Skills />
         <Experience />
+        <MyWorks />
         <Education />
-        <Projects />
       </main>
       <Footer />
     </>
