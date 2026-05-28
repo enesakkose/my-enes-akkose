@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "title": "Update required",
+  "message": "A newer version of Domain Organizer is required to continue.",
+  "buttonLabel": "Update Domain Organizer",
+  "ios": {
+    "minimumBuildNumber": 36,
+    "minimumVersion": "1.0.0",
+    "storeUrl": ""
+  },
+  "android": {
+    "minimumBuildNumber": 1,
+    "minimumVersion": "1.0.0",
+    "storeUrl": "https://play.google.com/store/apps/details?id=com.domainvault.app"
+  }
+}
