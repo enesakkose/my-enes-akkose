@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "title": "Update required",
   "message": "A newer version of Domain Organizer is required to continue.",
   "buttonLabel": "Update Domain Organizer",
