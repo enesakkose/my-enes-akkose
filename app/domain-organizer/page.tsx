@@ -163,6 +163,25 @@ const showcase = [
 
 const appStoreUrl = 'https://apps.apple.com/tr/app/domain-organizer-tracker/id6766611220'
 
+function AppStoreBadge() {
+  return (
+    <>
+      <svg
+        className={styles.storeGlyph}
+        viewBox='0 0 24 24'
+        fill='currentColor'
+        aria-hidden='true'
+      >
+        <path d='M16.53 12.88c-.03-3.08 2.52-4.56 2.64-4.63-1.44-2.1-3.67-2.39-4.45-2.42-1.9-.19-3.7 1.12-4.66 1.12-.97 0-2.45-1.09-4.03-1.06-2.07.03-3.98 1.2-5.05 3.05-2.16 3.75-.55 9.3 1.55 12.34 1.03 1.49 2.26 3.16 3.87 3.1 1.55-.06 2.14-1 4.02-1 1.87 0 2.4 1 4.04.97 1.67-.03 2.73-1.52 3.75-3.02 1.18-1.72 1.66-3.39 1.69-3.48-.04-.02-3.25-1.25-3.28-4.97ZM13.48 3.84c.85-1.03 1.43-2.46 1.27-3.88-1.23.05-2.71.82-3.59 1.85-.79.91-1.48 2.37-1.29 3.76 1.36.11 2.76-.7 3.61-1.73Z' />
+      </svg>
+      <span className={styles.storeText}>
+        <span>Download on the</span>
+        <strong>App Store</strong>
+      </span>
+    </>
+  )
+}
+
 export default function DomainOrganizerLandingPage() {
   return (
     <main className={styles.page} style={themeStyle}>
@@ -192,7 +211,7 @@ export default function DomainOrganizerLandingPage() {
 
       <section className={`${styles.shell} ${styles.hero}`}>
         <div>
-          <span className={styles.eyebrow}>Liquid green domain control</span>
+          <span className={styles.eyebrow}>Domain control</span>
           <h1>
             All your domains.
             <span className={styles.accent}>One clean view.</span>
@@ -203,8 +222,7 @@ export default function DomainOrganizerLandingPage() {
           </p>
           <div className={styles.actions}>
             <a className={`${styles.primaryButton} ${styles.storeButton}`} href={appStoreUrl}>
-              <span className={styles.storeIcon} aria-hidden='true' />
-              App Store
+              <AppStoreBadge />
             </a>
             <a className={styles.secondaryButton} href='#screens'>
               Explore the app
@@ -350,8 +368,7 @@ export default function DomainOrganizerLandingPage() {
         </div>
         <div className={styles.ctaActions}>
           <a className={`${styles.secondaryButton} ${styles.storeButton}`} href={appStoreUrl}>
-            <span className={styles.storeIcon} aria-hidden='true' />
-            App Store
+            <AppStoreBadge />
           </a>
           <a className={styles.secondaryButton} href='/domain-organizer/terms-of-use'>
             Read terms

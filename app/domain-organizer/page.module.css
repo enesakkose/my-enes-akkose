@@ -188,23 +188,42 @@
 }
 
 .storeButton {
+  min-height: 58px;
+  padding: 0 18px;
   gap: var(--md);
+  color: var(--white);
+  background: var(--black);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--md);
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.24);
 }
 
-.storeIcon {
+.storeGlyph {
   display: grid;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   place-items: center;
+  color: var(--white);
 }
 
-.storeIcon::before {
-  width: 14px;
-  height: 18px;
-  content: "";
-  background: currentColor;
-  border-radius: 8px 8px 10px 10px;
-  clip-path: polygon(50% 0%, 78% 18%, 100% 52%, 82% 100%, 50% 86%, 18% 100%, 0% 52%, 22% 18%);
+.storeText {
+  display: grid;
+  gap: 1px;
+  text-align: left;
+}
+
+.storeText span {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.storeText strong {
+  color: var(--white);
+  font-size: var(--xl);
+  font-weight: 800;
+  line-height: 1;
 }
 
 .stats {
@@ -497,6 +516,12 @@
   color: var(--onSurface);
   background: var(--surface);
   border-color: transparent;
+}
+
+.cta .storeButton {
+  color: var(--white);
+  background: var(--black);
+  border-color: rgba(14, 14, 14, 0.18);
 }
 
 .ctaActions {
