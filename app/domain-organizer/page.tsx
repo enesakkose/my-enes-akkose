@@ -161,7 +161,7 @@ const showcase = [
   },
 ]
 
-const appStoreUrl = ''
+const appStoreUrl = 'https://apps.apple.com/tr/app/domain-organizer-tracker/id6766611220'
 
 export default function DomainOrganizerLandingPage() {
   return (
