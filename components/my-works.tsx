@@ -42,6 +42,31 @@ const WORKS_DATA: Work[] = [
     ],
   },
   {
+    name: 'Domain Organizer',
+    description:
+      'A focused mobile app for managing domain portfolios in one clean view. Track renewal dates and registrar details, organize domains into folders, verify ownership through DNS TXT records, filter by status, and receive timely renewal notifications. Premium access and subscriptions are integrated for larger portfolios. Published on the App Store.',
+    tech: [
+      'React Native',
+      'Expo',
+      'TypeScript',
+      'Supabase',
+      'RevenueCat',
+      'TanStack Query',
+    ],
+    icon: { type: 'image', src: '/domain-organizer/icon-dark.png' },
+    link: {
+      href: 'https://apps.apple.com/tr/app/domain-organizer-tracker/id6766611220',
+      label: 'View on App Store',
+      type: 'appStore',
+    },
+    screenshots: [
+      '/domain-organizer/all-domains.png',
+      '/domain-organizer/add-domain.png',
+      '/domain-organizer/domain-detail.png',
+      '/domain-organizer/folders.png',
+    ],
+  },
+  {
     name: 'Bulmate',
     description:
       'AI-powered, blazing fast command-line price comparison tool. It helps you find the absolute cheapest prices for any product across different countries and search engines, directly from your terminal. Features include global search (15+ countries), native HTTP parsing for speed, and intelligent engine switching.',
@@ -54,21 +79,6 @@ const WORKS_DATA: Work[] = [
       href: 'https://www.npmjs.com/package/@enesakkose/bulmate',
       label: 'View on NPM',
       type: 'npm',
-    },
-  },
-  {
-    name: 'Music-Player',
-    description:
-      'A music application with features for listening, following, creating playlists, and commenting. Includes user authentication, data management, and form validation.',
-    tech: ['React', 'Redux Toolkit', 'Firebase', 'Formik', 'Yup', 'CSS'],
-    icon: {
-      type: 'svg',
-      d: 'M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3',
-    },
-    link: {
-      href: 'https://github.com/enesakkose',
-      label: 'GitHub repository',
-      type: 'github',
     },
   },
 ]
